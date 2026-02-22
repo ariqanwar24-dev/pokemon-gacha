@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Gacha Simulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card shadow-lg">
+    <div class="d-flex align-items-center justify-content-center mb-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" 
+             alt="Pokemon Logo" 
+             style="width: 120px; margin-right: 10px; filter: drop-shadow(0 0 5px rgba(255,203,5,0.8));">
+        <h3 class="m-0" style="font-family: 'Orbitron';">GACHA</h3>
+    </div>
+
+    <div class="badge-saldo">
+        Saldo: <span id="saldo-saat-ini" class="text-info">1000</span> DM
+    </div>
+
+    <div class="text-start">
+        <label class="small text-secondary">Top Up / Tambah DM:</label>
+        <input type="number" id="input-dm" class="form-control" placeholder="Isi angka...">
+        
+        <label class="small text-secondary">Gunakan Voucher?</label>
+        <select id="input-voucher" class="form-select">
+            <option value="tidak">Tidak Ada</option>
+            <option value="ada">Ada (Gratis 1x Pull)</option>
+        </select>
+    </div>
+
+    <button id="btn-gacha">PULL (160 DM)</button>
+
+    <div id="display-hasil">
+        <div id="gacha-card">
+            <img id="char-img" src="" alt="Pokemon">
+            <h4 id="char-name" class="mt-2"></h4>
+        </div>
+        <p id="teks-output" class="m-0 text-center">Siap untuk gacha?</p>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
