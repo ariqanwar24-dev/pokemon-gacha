@@ -1,4 +1,4 @@
-let saldoSekarang = 1000;
+let saldoSekarang = 500;
 
 const daftarKarakter = [
     { nama: "Mewtwo (LEGEND)", id: 150 },
@@ -63,4 +63,5 @@ tombol.onclick = function() {
         teksOutput.innerHTML = "❌ <b>Saldo Kurang!</b>";
         displayBox.style.borderColor = "#ff4444";
     }
+
 };
